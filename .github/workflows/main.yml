@@ -36,6 +36,9 @@ jobs:
           context: ./src
           file: ./src/Dockerfile
           push: true
-          tags: murillomamud/rotten-potatoes:latest
+          tags: | 
+            murillomamud/rotten-potatoes:latest
+            murillomamud/rotten-potatoes:${{github.run_number}}
+            
     
           
